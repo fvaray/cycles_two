@@ -57,6 +57,35 @@ public class Main {
             }
         } while (amountSavingsProc < 12000000f);
 
+        System.out.println("Задача 6");
+        amountSavingsProc = 15000f;
+        month = 0;
+        int cntMonthsPerNineYears = 12 * 9;
+        do {
+            month++;
+            amountSavingsProc = amountSavingsProc + amountSavingsProc * 0.07f;
+            if (month % 6 == 0) {
+                System.out.printf("На %d месяц вклад Василия будет составлять %.1f рублей \n", month, amountSavingsProc);
+            }
+        } while (month < cntMonthsPerNineYears);
 
+        System.out.println("Задача 7");
+        int firstFriday = 1;
+        for (int day = firstFriday; day <= 31; day += 7) {
+            System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет \n", day);
+        }
+
+        System.out.println("Задача 8");
+        int year = 0;
+        int period = 79;
+        int startYear = 2025 - 200;
+        int stopYear = 2025 + 100;
+        do{
+            year+= period;
+            if (year > startYear && year < stopYear){
+                System.out.println(year);
+            }
+        }
+        while(year < stopYear);
     }
 }
