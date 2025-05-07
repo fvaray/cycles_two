@@ -75,6 +75,7 @@ public class Main {
             System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет \n", day);
         }
 
+
         System.out.println("Задача 8");
         int year = 0;
         int period = 79;
